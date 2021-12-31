@@ -1,0 +1,11 @@
+.seven-segments {
+    display: flex;
+    justify-content: center;
+    font-size: 225px;
+    &--success {
+        color: #32bf00;
+    }
+    &--error {
+        color: #cc3300;
+    }
+}

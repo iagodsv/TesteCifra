@@ -1,0 +1,22 @@
+#header {
+  text-align: center;
+
+
+  h1 {
+    background: -webkit-linear-gradient(180deg, #ef6c00 0%, #c0661c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  hr{
+
+    max-width: 255px;
+    border: none;
+    background: #CFCFCF;
+    height: 1px;
+
+  }
+}

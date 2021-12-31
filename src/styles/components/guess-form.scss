@@ -1,0 +1,20 @@
+.guess-form {
+    &__input {
+        width: 217px;
+        height: 42px;
+        background: #ffffff;
+        border: 1px solid #cfcfcf;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    &__button {
+        background: linear-gradient(180deg, #ef6c00 0%, #c0661c 100%);
+        width: 70px;
+        height: 42px;
+        color: #f7f9f9;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+}
