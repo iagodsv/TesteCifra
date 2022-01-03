@@ -23,7 +23,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve('./src/views/index.pug'),
-      title: 'Webpack Boilerplate Vanilla JS',
+      title: 'Qual é o número?',
       chunks: ['app'],
     }),
     new MiniCssExtractPlugin({

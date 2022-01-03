@@ -1,6 +1,6 @@
 #header {
   text-align: center;
-
+  padding: 28px 0px;
 
   h1 {
     background: -webkit-linear-gradient(180deg, #ef6c00 0%, #c0661c 100%);
@@ -8,15 +8,19 @@
     -webkit-text-fill-color: transparent;
     font-size: 36px;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 24px;
+    }
   }
 
-  hr{
-
+  hr {
     max-width: 255px;
     border: none;
-    background: #CFCFCF;
+    background: #cfcfcf;
     height: 1px;
-
   }
 }

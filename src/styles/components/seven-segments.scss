@@ -1,11 +1,266 @@
 .seven-segments {
-    display: flex;
-    justify-content: center;
-    font-size: 225px;
-    &--success {
-        color: #32bf00;
+    position: relative;
+    height: 126px;
+    width: 70px;
+    margin: 10px;
+
+    &__container {
     }
-    &--error {
-        color: #cc3300;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__response {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        color: #ef6c00;
+        margin-bottom: 30px;
+        &--success {
+            color: $success;
+        }
+        &--error {
+            color: $error;
+        }
+    }
+
+    &[data-value="0"] {
+        .segment {
+            &__A,
+            &__B,
+            &__C,
+            &__D,
+            &__E,
+            &__F {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+
+    &[data-value="1"] {
+        .segment {
+            &__B,
+            &__C {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+
+    &[data-value="2"] {
+        .segment {
+            &__A,
+            &__B,
+            &__D,
+            &__E,
+            &__G {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+
+    &[data-value="3"] {
+        .segment {
+            &__A,
+            &__B,
+            &__C,
+            &__D,
+            &__G {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+
+    &[data-value="4"] {
+        .segment {
+            &__B,
+            &__C,
+            &__F,
+            &__G {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+
+    &[data-value="5"] {
+        .segment {
+            &__A,
+            &__C,
+            &__D,
+            &__F,
+            &__G {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+
+    &[data-value="6"] {
+        .segment {
+            &__A,
+            &__C,
+            &__D,
+            &__E,
+            &__F,
+            &__G {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+
+    &[data-value="7"] {
+        .segment {
+            &__A,
+            &__B,
+            &__C {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+
+    &[data-value="8"] {
+        .segment {
+            &__A,
+            &__B,
+            &__C,
+            &__D,
+            &__E,
+            &__F,
+            &__G {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+
+    &[data-value="9"] {
+        .segment {
+            &__A,
+            &__B,
+            &__C,
+            &__D,
+            &__F,
+            &__G {
+                background-color: $gray-26;
+                &--success {
+                    background-color: $success;
+                }
+                &--error {
+                    background-color: $error;
+                }
+            }
+        }
+    }
+}
+
+.segment {
+    background-color: $gray-dd;
+    height: 50px;
+    position: absolute;
+    width: 12px;
+
+    &__A {
+        left: 29px;
+        top: -19px;
+        transform: rotate(90deg);
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    &__B {
+        right: 0;
+        top: 10px;
+        border-radius: 8px;
+    }
+
+    &__C {
+        right: 0;
+        top: 68px;
+        border-radius: 8px;
+    }
+
+    &__D {
+        left: 29px;
+        top: 95px;
+        transform: rotate(90deg);
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+
+    &__E {
+        left: 0;
+        top: 69px;
+        border-radius: 8px;
+    }
+
+    &__F {
+        left: 0;
+        top: 10px;
+        border-radius: 8px;
+    }
+
+    &__G {
+        left: 29px;
+        top: 40px;
+        transform: rotate(90deg);
+        border-radius: 8px;
     }
 }
